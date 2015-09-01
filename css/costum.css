@@ -285,16 +285,16 @@ a.menu:hover, a.menu:active, a.menu:focus{
 @media screen and (max-width: 480px) {
 	.logo-s{
   		position: absolute;
-  		left: 20px;
-  		top: 10px;
-  		font-size:30px;
-  		font-family: "Wolf in the City";
-  		text-decoration:none;
-  		color:#2c3e50;
+		left: 30px;
+		top: -18px;
+		font-size: 60px;
+		font-family: "Wolf in the City";
+		text-decoration: none;
+		color: #2c3e50;
 	}
 	.navigation {
 		  width: 480px;
-		  margin-right:-480px;
+		  margin-right:-450px;
 	}
 	
 	.conten{
@@ -318,9 +318,8 @@ a.menu:hover, a.menu:active, a.menu:focus{
 		width:30px;
 		height:38px;	
 		position:fixed;
-		right: 23px;
 		top:15px;
-		right:30px;
+		right:15px;
 		z-index:20;
 	}
 	.line{
