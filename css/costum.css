@@ -1,0 +1,424 @@
+@charset "utf-8";
+/* CSS Document */
+
+.logo-s{
+  position: absolute;
+  left: 55px;
+  font-size:100px;
+  font-family: "Wolf in the City";
+  text-decoration:none;
+  color:#2c3e50;
+  font-weight:bold;
+}
+
+.logo-s:hover{
+	text-decoration:none;
+	color:#2c3e50;		
+}
+
+h1{
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight:400;
+}
+
+p{
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;	
+}
+#home{
+	width:100%;	
+	overflow:hidden;
+	position:relative;
+}
+
+#mainArea{;
+	background-size:cover;
+	min-height:100vh;
+	width:100%;	
+	float:left;
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+}
+/*
+#filter{
+	background: url(../images/Untitled-2.png);
+	min-height:100vh;
+	width:100%;	
+}
+*/
+
+.pointer{
+	cursor:pointer;	
+}
+.menu-2{
+	display:none;	
+}
+.menu-2 > li{
+	margin:2px 0;	
+}
+
+/*=========color=============================*/
+.clr-white{
+	color:#FFFFFF;	
+}
+
+.clr-grey{
+	color:#636465;
+}
+
+.clr-wolf{
+	font-family:"Wolf in the City";
+	font-size:425px;
+}
+
+a.clr-white:hover{
+	color:#FFFFFF;
+	text-decoration:none;	
+}
+
+/*=========color=============================*/
+
+/*=========font=============================*/
+
+.font-50{
+	font-size:50px;	
+}
+.font-36{
+	font-size:36px;	
+}
+.font-14{
+	font-size:14px;	
+}
+.font-24{
+	font-size:24px;	
+}
+
+.semi{
+	font-weight:700px;	
+}
+.bold{
+	font-weight:bold;	
+}
+.slim{
+	font-weight:300;
+	margin: -75px 0 0 40px;
+}
+/*=========font=============================*/
+
+/*=========margin=============================*/
+.martop-half{
+	margin-top:8%;	
+}
+.martop-half-1{
+	margin-top:50%;	
+}
+.martop-20{
+	margin-top:20px;	
+}
+/*=========margin=============================*/
+
+/*=========line=============================*/
+.triger-menu{
+	width:47px;
+	height:38px;	
+	position:fixed;
+	top:50px;
+	right:100px;
+	z-index:20;
+}
+.line{
+	display:block;
+	width:47px;
+	height:5px;
+	background:#2c3e50;
+}
+
+.line-1, .line-2, .line-3, .line-4{
+	position:absolute;	
+	transition:all 0.5s ease;
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+}
+.line-1{
+	top:0;	
+}
+.line-2{
+	top:10px;	
+}
+.line-3{
+	top:20px;	
+}
+.line-4{
+	top:30px;	
+}
+
+.line-active-1{
+	top:15px !important;
+	transform:rotate(45deg)
+}
+.line-active-2{
+	top:15px !important;
+	transform:rotate(-45deg)
+}
+/*=========line=============================*/
+
+/*=========navigation=============================*/
+.navigation{
+	width:450px;
+	height:100vh;
+	right:0;	
+	position:fixed;	
+	background:#0A0A0A;
+	margin-right:-450px;
+	transition:all 0.5s ease;
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+}
+
+.active-nav1{
+	margin-right:0;	
+}
+.active-nav2{
+	margin-left:-400px !important;	
+}
+
+a.menu{
+	width:190px;
+	padding-bottom:5px;
+	text-decoration:none !important;	
+	position:relative;
+	margin-top:50px;
+	transition:all 0.5s ease;
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	z-index:10;
+}
+a.menu:hover, a.menu:active, a.menu:focus{
+	color:#FFFFFF !important;
+}
+
+.menu:after{
+	position:absolute;
+	content:"";
+	height:2px;
+	width:0;
+	background-color:#2c3e50;
+	left:0;
+	bottom:0;	
+	transition:all 0.5s ease;
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+}
+.menu:hover:after, .menu:active:after, .menu:focus:after{
+	width:100%;
+}
+.active-result.menu:after{
+	width:0 !important;	
+}
+/*=========navigation=============================*/
+
+/*============= FOOTER ===============*/
+.row-menu{
+	position:relative;	
+}
+
+#footer{
+  position: absolute;
+  bottom: 10%;
+  display: block;
+  margin: 0 auto;
+  width: 95%;
+}
+
+
+
+/*===================== MEDIA QUERY ==========================*/
+
+/* iPads (portrait and landscape) ----------- */
+/*@media only screen and (min-device-width : 801px) and (max-device-width : 1024px) {
+	.clr-white.font-110.martop-half.logo{
+		font-size:90px;
+	}
+	
+	.martop-half {
+	  margin-top: 29%;
+	}
+	
+	.martop-half-1 {
+	  margin-top: 29%;
+	}
+}*/
+
+
+@media screen and (max-width: 1025px) {
+	.clr-white.font-110.martop-half.logo{
+		font-size:90px;
+	}
+	
+	.martop-half {
+	  margin-top: 28%;
+	}
+	
+	.martop-half-1 {
+	  margin-top: 29%;
+	}
+}
+
+@media screen and (max-width: 801px) {
+	.clr-white.font-110.martop-half.logo{
+		font-size:90px;
+	}
+	
+	.martop-half {
+	  margin-top: 45%;
+	}
+	
+	.martop-half-1 {
+	  margin-top: 29%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.logo-s{
+  		position: absolute;
+  		left: 20px;
+  		top: 10px;
+  		font-size:30px;
+  		font-family: 'Josefin Sans', sans-serif;
+  		text-decoration:none;
+  		color:#2c3e50;
+	}
+	.navigation {
+		  width: 480px;
+		  margin-right:-480px;
+	}
+	
+	.conten{
+		  background-color: rgba(11, 11, 13, 0.7);
+		  width: 495px;
+		  height: 50px;
+		  position: fixed;
+		  z-index:20;
+	}
+	
+	.active-nav1{
+		margin-right:0;	
+	}
+	
+	#footer {
+	  position: absolute;
+	  bottom: 5%;
+	  left: 5px;
+	}
+		.triger-menu{
+		width:30px;
+		height:38px;	
+		position:fixed;
+		right: 23px;
+		top:15px;
+		right:30px;
+		z-index:20;
+	}
+	.line{
+		display:block;
+		width:30px;
+		height:2px;
+		background:#2c3e50;
+	}
+	
+	.line-1, .line-2, .line-3, .line-4{
+		position:absolute;	
+		transition:all 0.5s ease;
+		-webkit-transition:all 0.3s ease;
+		-moz-transition:all 0.3s ease;
+		-o-transition:all 0.3s ease;
+	}
+	.line-1{
+		top:0;	
+	}
+	.line-2{
+		top:5px;	
+	}
+	.line-3{
+		top:10px;	
+	}
+	.line-4{
+		top:15px;	
+	}
+	
+	.line-active-1{
+		top:15px !important;
+		transform:rotate(45deg)
+	}
+	.line-active-2{
+		top:15px !important;
+		transform:rotate(-45deg)
+	}
+
+	
+}
+
+@media screen and (max-width: 361px) {
+			.clr-white.font-110.martop-half.logo{
+		font-size:40px;
+		 margin-top: 68%;
+	}
+	
+	.martop-half-1 {
+	  margin-top: 15%;
+	}
+	
+	.martop-half {
+	  margin-top: 30%;
+	}
+	
+	.navigation {
+		  width: 360px;
+	}
+	
+	.menu{
+		font-size:24px;
+	}
+	
+	.menu-2 > li > a{
+		font-size:14px;	
+	}
+	
+	/*#footer {
+	  position: absolute;
+	  bottom: 5%;
+	  left: 5px;
+	}*/
+	
+	/*===== ADD G ======*/
+	#footer {
+	  position: absolute;
+	  bottom: 12%;
+	  left: 5px;
+	}
+	
+	.navigation {
+	  top: 50px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	
+	.navigation {
+		  width: 320px;
+	}
+	
+}
+
+
+
+
+
+
+
+
+

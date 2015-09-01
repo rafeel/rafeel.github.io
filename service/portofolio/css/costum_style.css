@@ -1,0 +1,133 @@
+@charset "utf-8";
+/* CSS Document */
+/*===================== Work-3 Css start here ==========================*/
+.bg-putih{
+	background-color:#fffff;}
+
+.padding-0{
+	padding:0px;
+}
+.padding-30{
+	padding-top:30px;
+	padding-bottom:30px;
+}
+.left-section{
+	padding-right:0px;
+	padding-left:0px;
+}
+.right-section{
+	padding-right:0px;
+}
+#headerSection{
+	padding-top:60px;
+	padding-bottom:50px;
+}
+.header-title{
+	width: 210px;
+	height: 55px;
+	margin:auto;
+	font-size: 48px;
+	padding-bottom: 1px;
+	border-bottom: 2px solid #2c3e50;
+}
+.paragraph-1{
+	font-size:18px;
+	color:#646464;
+	padding-top:35px;
+}
+.section-header{
+	font-size:24px;
+	color:#121212;
+	padding-top:10px;
+	padding-bottom:15px;
+	margin:0px;
+	text-align:left;
+}
+.section-subtitle{
+	font-size:18px;
+	color:#6cd9d9;
+	padding-bottom:20px;
+	margin:0px;
+	text-align:left;
+}
+.section-content{
+	font-size:14px;
+	line-height:21px;
+	color:#4b4b4b;
+	padding-bottom:35px;
+	margin:0px;
+	text-align:left;
+}
+.visit-btn{
+	font-size: 18px;
+	color: #6cd9d9;
+	background: none repeat scroll 0% 0% #FFF;
+	border: 1px solid #6cd9d9;
+	float:left;
+	text-align: left;
+	padding: 5px 15px;
+	border-radius: 5px;
+	transition:all 0.5s ease-in-out;
+}
+.visit-btn:hover{
+	text-decoration:none;
+	background:#6cd9d9;
+	color:white;
+}
+.padding{
+	padding-bottom:60px;
+}
+.img-R{
+	max-width: 100%;
+	height: auto;
+	border-radius:5px;
+}
+#section-2 .right-section{
+	float:right;
+}
+#section-2 .left-section{
+	float:left;
+}
+img-R{
+	max-width: 100%;
+	height: auto
+}
+@media (max-width:1024px){
+#section-2 .right-section {
+    float: none;
+    padding-left: 0px;
+}
+
+#section-1 .left-section, #section-3 .left-section{
+	text-align:center;
+}
+#section-2 .right-section{
+	text-align:center;
+}
+}
+@media (max-width:640px){
+#section-1 .left-section, #section-1 .right-section, #section-3 .left-section, #section-3 .right-section{
+    float: none;
+}
+#section-2 .right-section {
+    float: none;
+}
+.padding-0{
+	padding-left:15px;
+	padding-right:15px;
+}
+}
+@media (max-width:360px){
+#headerSection{
+	padding-top: 150px;
+}
+#section-1 .left-section, #section-1 .right-section, #section-3 .left-section, #section-3 .right-section{
+   padding:0px;   
+}
+}
+@media (max-width:980px) and (min-width:768px){
+.padding-80{
+		padding-left:80px;
+		padding-right:80px;
+}
+}

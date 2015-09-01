@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+/*===================== About-3 Css start here ==========================*/
+#mainArea{
+	background:none;
+}
+.sectionLeft{
+	margin-top:145px;
+}
+.sectionLeft h1{
+	width:206px;
+	height:55px;
+	border-bottom:4px solid #2c3e50;
+	font-size:48px;
+	color:#2c3e50;
+}
+.sectionLeft p{
+	font-size:14px;
+	line-height:25px;
+	color:#2c3e50;
+	padding-top:10px;
+}
+.sectionLeft p span{ 
+	width:85%;
+	float:left;
+	line-height:25px;
+	border-bottom:1px solid #2c3e50;
+}
+.sectionLeft p ul li{ 
+	width:85%;
+	float:left;
+	margin:0;
+}
+.img-R{
+	max-width: 100%;
+	height: auto
+}
+/* tab configuration start here */
+input, .content {
+    display: none;
+    line-height: 35px;
+    min-width: 200px;
+}
+
+#one:checked ~ .one,
+#two:checked ~ .two,
+#three:checked ~ .three {display: block;}
+
+label {
+    cursor: pointer;
+	font-size:24px;
+    height: 42px;
+    display: inline-block;
+    text-align: center;
+    color: #121212;
+    margin: 50px 70px 0 0 ;
+    transition: background .25s linear; 
+}
+
+label:hover, input:checked + label {border-bottom:2px solid #2c3e50;}
+/* tab configuration end here*/
+@media (min-width:321px) and (max-width:360px){
+	.sectionLeft p span{ 
+	width:100%;
+	float:left;
+	line-height:25px;
+	border-bottom:1px solid #2c3e50;
+}
+label {
+	cursor: pointer;
+	font-size: 17px;
+	height: 25px;
+	display: inline-block;
+	text-align: center;
+	color: #121212;
+	margin-right: 17px;
+	transition: #000 0.25s linear 0s;
+}
+}
+@media (max-width:320px){
+label {
+	cursor: pointer;
+	font-size: 15px;
+	height: 25px;
+	display: inline-block;
+	text-align: center;
+	color: #121212;
+	margin-right: 13px;
+}
+}

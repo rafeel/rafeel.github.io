@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background:#000;
+}
+.sideArea{
+	margin: 0 0 32px 0;
+}
+.portfolio{
+	position:relative;
+	display: inline-block;
+	margin:0;
+	padding:0 0 0 10px;
+}
+.portfolio a{
+	opacity:0;
+	position:absolute;
+	display: block;
+	width:97%;  
+	height: 100%; 
+	background: #c2195d;
+	text-decoration:none;
+	padding:0;
+}
+.portfolio a:hover  { opacity: 0.8; text-decoration:none;}
+ .portfolio .title_link{
+	font-size:24px;
+	color:#FFF;
+	font-family:"Segoe UI";
+	font-weight:bold;
+	opacity:1;
+	margin-top:75px;
+}
+ .portfolio .title_link_border{
+	width:235px;
+	height:2px;
+	background:#FFF;
+	margin:20px 0 17px 23px;
+}
+.portfolio .info_link{
+	font-size:14px;
+	color:#FFF;
+	font-family:"Segoe UI";
+	opacity:1;
+	margin-bottom:34px;
+}
+
+.portfolio:hover .eye{
+	top:200px;
+}
+.eye{
+	position:absolute;
+	top:250px;
+	right:45%;
+	color:#000;
+	transition:all 0.5s;
+}
+
+/*=================
+	 header 
+====================*/
+#header{
+	width:100%}
+#logo{
+	margin:0 0 0 0;
+}
+#logo a{
+	font-size:48px;
+	color:#FFF;
+	font-family:Rockwell;
+}
+ #logo a::after{
+	content:"";
+	width:185px;
+	height:2px;
+	background:#F00;
+	display:block;
+}
+#logo a:hover{
+	text-decoration:none;
+}
+/*====================
+	 navArea 
+======================*/
+.navArea{
+}
+.navArea ul{
+}
+ .navArea li{
+	display:block;
+	float:left;
+	padding:32px 0 43px 50px;
+}
+.navArea a{
+	text-decoration:none;
+	color:#FFF;
+	font-size:24px;
+}
+.navArea a:hover{
+	text-decoration:underline;
+}
+@keyframes eye_link{
+	from{top:80px }
+	to{top:0px}
+}
+@-webkit-keyframes eye_link{
+	from{top:80px; opacity:0.2;}
+	to{top:0px; opacity:1}
+}
