@@ -288,12 +288,15 @@ a.menu:hover, a.menu:active, a.menu:focus{
 }
 
 @media screen and (max-width: 480px) {
+	.font-50 {
+    font-size: 30px;
+	}
 	.clr-wolf {
     font-size: 200px;
 	}
 	.slim {
     font-weight: 300;
-    margin: -50px 35px 0 40px;
+    margin: -25px 35px 0 40px;
 	}
 	.logo-s{
   		position: absolute;
