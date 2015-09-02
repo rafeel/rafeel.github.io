@@ -288,6 +288,13 @@ a.menu:hover, a.menu:active, a.menu:focus{
 }
 
 @media screen and (max-width: 480px) {
+	.clr-wolf {
+    font-size: 200px;
+	}
+	.slim {
+    font-weight: 300;
+    margin: -50px 35px 0 40px;
+	}
 	.logo-s{
   		position: absolute;
 		left: 30px;
@@ -303,7 +310,7 @@ a.menu:hover, a.menu:active, a.menu:focus{
 	}
 	
 	.conten{
-		  background-color: rgba(11, 11, 13, 0.7);
+		  background-color: rgba(200, 200, 200, 0.7);
 		  width: 495px;
 		  height: 50px;
 		  position: fixed;
@@ -367,7 +374,7 @@ a.menu:hover, a.menu:active, a.menu:focus{
 }
 
 @media screen and (max-width: 361px) {
-			.clr-white.font-110.martop-half.logo{
+	.clr-white.font-110.martop-half.logo{
 		font-size:40px;
 		 margin-top: 68%;
 	}
