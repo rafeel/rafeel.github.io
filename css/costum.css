@@ -1,5 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
+@font-face{
+    font-family:Wolf in the City;
+    src: url(../fonts/Wolf%20in%20the%20City.ttf),
+		url(../fonts/Wolf%20in%20the%20City.ttf) format("Truetype");
+}
 
 .logo-s{
   position: absolute;
