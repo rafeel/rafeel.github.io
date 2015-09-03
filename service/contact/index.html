@@ -32,26 +32,28 @@
                         	<h1 class="colorblue BOLD margintop-75 font-36">CONTACT</h1>
                         </div>
                     </div>
-                    <div class="row margin-top170 margincenter minleft">
-                    	<div class="col-md-4 col-sm-10 col-xs-11 mintop">
-                        	<input type="text" placeholder="Name">
+                    <form action="#" method="post" class="form">
+                        <div class="row margin-top170 margincenter minleft">
+                            <div class="col-md-4 col-sm-10 col-xs-11 mintop">
+                                <input type="text" id="name" placeholder="Name">
+                            </div>
+                            <div class="col-md-4 col-sm-10 col-xs-11 space">
+                                <input type="text" id="email" placeholder="Email">
+                            </div>
+                            <div class="col-md-4 col-sm-10 col-xs-11 space">
+                                <input type="text" id="phone" placeholder="Phone">
+                            </div>
+                            <div class="col-md-12 col-sm-10 col-xs-11">
+                                <textarea id="message" placeholder="Message"></textarea>
+                            </div>
                         </div>
-                        <div class="col-md-4 col-sm-10 col-xs-11 space">
-                        	<input type="text" placeholder="Email">
+                        <div class="row">
+                             <div class="col-md-10 col-sm-10 col-xs-10"></div>
+                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                <input type="submit" class="btn-submit BOLD colorblue" value="SUBMIT">
+                            </div>
                         </div>
-                        <div class="col-md-4 col-sm-10 col-xs-11 space">
-                        	<input type="text" placeholder="Phone">
-                        </div>
-                        <div class="col-md-12 col-sm-10 col-xs-11">
-                        	<textarea placeholder="Message"></textarea>
-                        </div>
-                    </div>
-                    <div class="row">
-                    	 <div class="col-md-10 col-sm-10 col-xs-10"></div>
-                        <div class="col-md-2 col-sm-2 col-xs-2 btn-submit">
-                        	<a href="#" class="BOLD colorblue">SUBMIT</a>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
             <!-------------------------------- /header ---------------------------->
@@ -121,7 +123,37 @@
 </body>
 <script src="../../js/navigation.js"></script>
 <script>
-	$(document).ready(function(e) {
+	$(document).ready(function() {
+        $('.form').submit(function(event) {
+            /* GET All data From Form */
+            var $name = $('#name');
+            var $email = $('#email');
+            var $phone = $('#phone');
+            var $message = $('#message');
+            
+            /* (Optional) Create var for ajax */
+            var url = "./mail.php";
+
+            var data = {
+                "name"  : $name.val(),
+                "email"  : $email.val(),
+                "phone"  : $phone.val(),
+                "message"  : $message.val()
+            }
+
+            /* send to php */    
+            $.ajax({
+                type    : "POST",
+                url     : url,
+                data    : data,
+                success : function(data){
+                    alert("message Success Sended");
+                },
+                error : function (){
+                }
+            });
+            event.preventDefault();
+        });
     });
 </script>
 </html>
